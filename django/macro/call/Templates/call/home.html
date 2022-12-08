@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Govt School</title>
+</head>
+<body bgcolor="cyan">
+    <h1 align = "center"> All Govt. College in Chattogram </h1> 
+    <br>
+    <br>
+    <p align="center">Check out <a href=" {% url 'schoollist' %}">College List:</a></p>
+    <p align="center">Check out <a href=" {% url 'subjectlist' %}">Subject List:</a></p>
+    <p align="center">Check out <a href=" {% url 'teacherlist' %} ">Teacher List:</a></p>
+    <hr>
+    <p align="center"><a href=" {%url 'schoolcreate' %}">Add College</a></p>
+    <p align="center"><a href=" {%url 'subjectcreate' %}">Add Subject</a></p>
+    <p align="center"><a href=" {%url 'teachercreate' %}">Add Teacher</a></p>
+</body>
+</html>

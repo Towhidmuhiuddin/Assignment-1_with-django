@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher list</title>
+</head>
+<body align="center">
+    {% for teacher in object_list %}
+    <br>
+    {{teacher.name}} - {{teacher.subject}} - {{teacher.mobile}} - {{teacher.email}}
+    <br>
+    {% endfor %}
+</body>
+<h3 align="center"><a href="{% url 'home' %}">Go Home</a></h3>
+</html>
